@@ -1,11 +1,10 @@
 //Exercise #3: Debugging (Type Conversion)
 
-let numberA = 100; // เปลี่ยนจาก const เป็น let เพื่อให้เปลี่ยนค่าได้
-const numberB = "20";
+//Start coding here
+let numberA = 100;
+let numberB = "20";
 
+console.log(typeof numberB);
 numberA = 10;
 
-//ของเก่า console.log(`Sum: ${numberA + numberB}`);
-console.log(`Sum: ${numberA + parseInt(numberB)}`);
-
-// ใช้ parseInt เพื่อแปลง numberB เป็นตัวเลข
+console.log(`Sum: ${numberA + Number(numberB)}`);
